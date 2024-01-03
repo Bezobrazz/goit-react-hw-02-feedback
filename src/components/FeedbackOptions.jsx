@@ -1,12 +1,14 @@
+import { OptionsContainer, Button } from './styledComponents';
+
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <div>
+    <OptionsContainer>
       {options.map(option => (
-        <button key={option.type} onClick={() => onLeaveFeedback(option.type)}>
+        <Button key={option.type} onClick={() => onLeaveFeedback(option.type)}>
           {option.label}
-        </button>
+        </Button>
       ))}
-    </div>
+    </OptionsContainer>
   );
 };
 

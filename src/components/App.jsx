@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Statistics from './Statistics';
+import { AppContainer } from './styledComponents';
 import FeedbackOptions from './FeedbackOptions';
 import Section from './Section';
 import Notification from './Notification';
@@ -45,7 +46,7 @@ class App extends Component {
     ];
 
     return (
-      <div>
+      <AppContainer>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={feedbackOptions}
@@ -66,7 +67,7 @@ class App extends Component {
             <Notification />
           )}
         </Section>
-      </div>
+      </AppContainer>
     );
   }
 }
